@@ -1,0 +1,41 @@
+[
+    {
+        "testsuite_name": "module 1",
+        "tests": [
+          {
+            "name": "Testcase_1",
+            "endpoint": "",
+            "type": "GET",
+            "headers": {
+              "contentType": "application/json"
+            },
+            "req_data": {},
+            "expected_response": {
+              "status": 200,
+              "data": {
+                "user": "kryptonite",
+                "name": "Anshu, the great Pandey"
+              }
+            }
+          },
+          {
+            "name": "Testcase_2",
+            "endpoint": "/other-endpoint",
+            "type": "POST",
+            "headers": {
+              "contentType": "application/json"
+            },
+            "req_data": {
+              "key1": "value1",
+              "key2": "value2"
+            },
+            "expected_response": {
+              "status": 200,
+              "data": {
+                "result": "success"
+              }
+            }
+          }
+        ]
+    }
+]

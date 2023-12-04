@@ -1,0 +1,9 @@
+version: 1.0
+configuration:
+  has_webserver: true
+  scoring:
+    command: "bash test/main.sh"
+    project_menu:
+      run: npm -C project start #nodejs
+      install: npm -C project install #nodejs
+      test: bash test/main.sh # npm test 
